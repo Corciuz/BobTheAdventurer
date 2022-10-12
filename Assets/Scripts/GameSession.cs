@@ -50,7 +50,10 @@ public class GameSession : MonoBehaviour
         Score+=PointsToAdd;
         ScoreText.text=Score.ToString();
     }
-
+    public void AddTolife(int LifeToAdd){
+        playerLives+=LifeToAdd;
+     LivesText.text=playerLives.ToString();
+    }
      void TakeLife()
     {
         playerLives--;
